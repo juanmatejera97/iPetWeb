@@ -1,0 +1,35 @@
+<body>
+    <main>
+        <div class="list">
+            @for (item of userList; track $index) {
+                <div class="line">
+                    <div class="user">
+                        <div class="profile">
+                            <img src="../../../assets/images/juanma.jpg" alt="{{item.username}}_img">
+                        </div>
+                        <div class="details">
+                            <h1 class="name">{{item.name + " " + item.surname}}</h1>
+                            <h3 class="username">{{"@" + item.username}}</h3>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <p>{{item.address}}</p>
+                    </div>
+                    <div class="email">
+                        <p>{{item.email}}</p>
+                    </div>
+                    <div class="role">
+                        <p>{{item.role}}</p>
+                    </div>
+                    <div class="action">
+                        <div class="icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </main>
+</body>

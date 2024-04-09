@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "../styles.scss";
+*{
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #dfe9f5;
+
+  
+}
+
+.content {
+  min-height: 100vh;
+  min-width: 100vh;
+  margin-left: 95px;
+  padding-left: 20px; 
+  padding-top: 20px; 
+  background: #dfe9f5;
+  flex: 1;
+  z-index: 0;
+}
+
+nav{
+  width: 95px;
+  height: 100%;
+  background: $blue;
+  transition: 0.2s linear;
+  position: fixed;
+  height: 100%;
+  z-index: 2;
+}
+nav:hover{
+  width: 290px;
+}
+
+nav:hover ~ .content::after{
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
+}
+
+.navbar{
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgb(0, 0, 0, 0.1);
+}
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span{
+  font-size: 18px;
+  color: rgb(39, 39, 39);
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.menu_list{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgb(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.menu_list a{
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: rgb(39, 39, 39);
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu_list i{
+  font-size: 1.2rem;
+  align-items: center;
+  color: #505c6b;
+  margin: 0 2rem 0 0.3rem;
+}
+
+.menu_list span{
+  color: gray;
+  font-size: 12px;
+  padding: 0.6rem 0.6rem 0 0.8rem;
+  
+}
+
+.menu_list a:hover{
+  background: rgb(214, 230, 255);
+  border-radius: 10px;
+  width: 290px;
+}
+
+

@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+$blue: #003049;
+$lightblue: #669bbc;
+$beige: #fdf0d5;
+$red: #c1121f;
+$darkred: #780000;
+
+.error_snackbar.mat-mdc-snack-bar-container {
+    .mdc-snackbar__surface {
+      margin-left: 95px;
+      background: #da6b64;
+      display: flex;
+      .mat-mdc-button {
+        color: #000000 !important;
+        justify-content: right;
+
+      }
+    }
+  
+    .mat-mdc-snack-bar-label.mdc-snackbar__label {
+      color: #000000;
+      font-weight: 500;
+      white-space: pre-wrap;
+    }
+}
+
+.message_snackbar.mat-mdc-snack-bar-container {
+    .mdc-snackbar__surface {
+        margin-left: 95px;
+        background: #80ff80af;
+        justify-content: center;
+        .mat-mdc-button {
+            color: #000000 !important;
+            justify-content: right;
+        }
+        }
+  
+    .mat-mdc-snack-bar-label.mdc-snackbar__label {
+      color: #000000;
+      font-weight: 500;
+      white-space: pre-wrap;
+    }
+}

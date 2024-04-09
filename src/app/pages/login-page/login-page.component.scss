@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  min-height: 100vh; /* Ajusta la altura para ocupar toda la pantalla */
+
+  .login-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 4rem;
+    border: 2px solid #476b81;
+    border-radius: 20px;
+    background: #fff;
+    
+    .input-field {
+      width: 100%;
+    }
+    
+    .togglepass-icon {
+      cursor: pointer;
+    }
+    
+    .login-btn {
+      width: 100%;
+      padding: 10px 0;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      
+      &:hover {
+        background-color: #0056b3;
+      }
+      
+      &:disabled {
+        background-color: #ccc;
+        cursor: not-allowed;
+      }
+    }
+    
+    label[for="login-label"] { 
+      display: block;
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 20px; 
+    }
+  }
+
+  .forgot-pass {
+    display: block;
+    margin-top: 0.1rem; 
+    margin-bottom: 2rem; 
+    font-size: 0.75rem;
+  }
+
+  .register{
+    margin-top: 20px; 
+    display: block;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+}

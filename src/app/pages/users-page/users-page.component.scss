@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 5.5rem;
+}
+
+h1{
+    margin: 0 auto;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+.list{
+    padding: 3rem;
+}
+.line{
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.line:hover{
+    box-shadow: 0 0 0.8rem rgba(0,0,0,0.3);
+    background-color: #8cbaff;
+    .profile img{
+        width: 4.5rem;
+        height: 4.5rem;
+        display: flex;
+    }
+    .username{
+        font-size: 1.2rem;
+        color: rgb(59, 59, 59);
+        font-weight: 500;
+
+    }
+}
+
+.name{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.username{
+    font-size: 1rem;
+    color: rgb(162, 162, 162);
+    font-weight: 500;
+
+}
+
+p{
+    font-size: 1rem;
+    color: black;
+    margin: 0;
+}
+
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile img{
+    border-color: rgb(0, 94, 170);
+    border-style: groove;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user .details{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    line-height: 1.3;
+    align-items: center;
+    height: 100%; /* Ocupa toda la altura */
+    align-items: flex-start; /* Alinea el contenido hacia la izquierda */
+    justify-content: center; 
+}
+
+h3{
+    margin: 0;
+}

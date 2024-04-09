@@ -1,0 +1,23 @@
+<div class="container">
+    <form [formGroup]="loginForm" class="login-container">
+      <label for="login-label">Iniciar sesión en <strong>iPet</strong></label>
+      <mat-form-field class="input-field" hideRequiredMarker="true" appearance="outline">
+        <mat-label>Usuario</mat-label>
+        <input matInput formControlName="username"/>
+      </mat-form-field>
+      <mat-form-field class="input-field" hideRequiredMarker="true" appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input matInput [type]="$showPassword() ? 'text' : 'password'"
+          formControlName="password" />
+        @if(loginForm.get('password')?.value !== ''){
+        <mat-icon matSuffix class="togglepass-icon" (click)="showPasswordEye()">{{ visibilityIcon }}</mat-icon>
+        }
+      </mat-form-field>
+      <span class="forgot-pass"><a href="">¿Olvidaste tú contraseña?</a></span>
+      <button class="login-btn" (click)="onSubmit(loginForm.get('username')?.value, loginForm.get('password')?.value)"
+        [disabled]="!loginForm.valid">
+        Iniciar sesión
+      </button>
+      <span class="register">¿No tienes una cuenta? <a href="register">Regístrate.</a></span>
+    </form>
+</div>
