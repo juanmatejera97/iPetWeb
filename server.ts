@@ -17,6 +17,9 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', browserDistFolder);
 
+  const cors = require("cors");
+  server.use(cors());
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
@@ -24,6 +27,7 @@ export function app(): express.Express {
     maxAge: '1y'
   }));
 
+  
   // All regular routes use the Angular engine
   server.get('*', (req, res, next) => {
     const { protocol, originalUrl, baseUrl, headers } = req;

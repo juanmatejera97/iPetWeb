@@ -1,4 +1,4 @@
 export const environment = {
-    production: false,
+    production: true,
     apiUrl: 'https://ipet.ddns.net:8000',
   };
